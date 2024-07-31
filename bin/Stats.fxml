@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="stats" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="216.0" prefWidth="391.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StatsController">
+   <children>
+      <GridPane alignment="CENTER" layoutX="7.0" layoutY="6.0" prefHeight="224.0" prefWidth="373.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="184.0" minHeight="0.0" prefHeight="59.333333333333336" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="184.0" minHeight="0.0" prefHeight="3.3333333333333357" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="348.6666831970215" minHeight="10.0" prefHeight="161.66668701171875" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="39.0" prefWidth="121.0" text="Statistics" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <GridPane alignment="CENTER" prefHeight="157.0" prefWidth="369.0" GridPane.rowIndex="2">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="171.66668701171875" minWidth="10.0" prefWidth="171.66668701171875" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.33331298828125" minWidth="10.0" prefWidth="170.33331298828125" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.33331298828125" minWidth="10.0" prefWidth="170.33331298828125" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.33331298828125" minWidth="10.0" prefWidth="170.33331298828125" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="86.66668701171875" minHeight="10.0" prefHeight="86.66668701171875" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="126.99997329711915" minHeight="10.0" prefHeight="86.66664632161458" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="totalGamesLabel" text="0" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="winpercentLabel" alignment="CENTER" text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="cstreakLabel" alignment="CENTER" text="0" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="mstreakLabel" alignment="CENTER" text="0" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" text="Played" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label text="Win %" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label text="Current Streak" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label text="Max Streak" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+               </children>
+            </GridPane>
+            <Line endX="193.4561309814453" startX="372.5858154296875" strokeWidth="2.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
